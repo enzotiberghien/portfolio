@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" aria-current="page" href="home.html">Enzo Tiberghien</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="container">
+        <h1 class="fade-in-bottom">Project</h1>
+        <hr id="line" class="fade-in-bottom">
+
+        <div class="card mb-3 project fade-in">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/myrmidon.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Myrmidon</h5>
+                        <p class="card-text">Myrmidon is an application that i developped in collaboration with 3 other developers for a University course. It is a well-being/tracker app that allow you to log your daily mood and tension and get statistics from it. We used Java, JavaFX, Agile methodoligies and Docker</p>
+                        <div class="links">
+                            <a href="https://github.com/enzotiberghien/Myrmidon"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 project js-scroll slide-right">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/todo.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Todo List</h5>
+                        <p class="card-text">This is a simple todolist app storing data with localStorage that i created with Html/css, javascript and Webpack</p>
+                        <div class="links">
+                            <a href="https://enzotiberghien.github.io/todo_list/"><i class="fa-solid fa-display"></i></a>
+                            <a href="https://github.com/enzotiberghien/todo_list.git"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 project js-scroll slide-left">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/library.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Library</h5>
+                        <p class="card-text">A book library that allow you to store books using localstorage. I used html/css, js.</p>
+                        <div class="links">
+                            <a href="https://enzotiberghien.github.io/library/"><i class="fa-solid fa-display"></i></a>
+                            <a href="https://github.com/enzotiberghien/library.git"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 project js-scroll slide-right">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/tictactoe.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Tic Tac Toe</h5>
+                        <p class="card-text">Simple mulitplayer tic tac toe game built with html, css and javascript.</p>
+                        <div class="links">
+                            <a href="https://enzotiberghien.github.io/tic_tac_toe/"><i class="fa-solid fa-display"></i></a>
+                            <a href="https://github.com/enzotiberghien/tic_tac_toe.git"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 project js-scroll slide-left">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/restaurant.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body project-desc">
+                        <h5 class="card-title">Restaurant Page</h5>
+                        <p class="card-text">Fake website for a restaurant created with html, css, js and webpack.</p>
+                        <div class="links">
+                            <a href="https://enzotiberghien.github.io/restaurant_page/"><i class="fa-solid fa-display"></i></a>
+                            <a href="https://github.com/enzotiberghien/restaurant_page.git"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h4>2022 - Enzo Tiberghien</h4>
+        <div id="links">
+            <a href="https://github.com/enzotiberghien"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/enzo-tiberghien-57285618b/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/14d7bbfec3.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

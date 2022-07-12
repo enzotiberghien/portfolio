@@ -1,0 +1,193 @@
+#container {
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+#line {
+    margin: 3% 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#pic-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+#pic {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+#intro {
+    width: 60%;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 1% 0;
+}
+
+#skills-title {
+    text-align: center;
+}
+
+#skills-container img {
+    width: 100px;
+    height: 100px;
+}
+
+#footer {
+    margin-top: 10%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(225, 225, 225, 0.2);
+}
+
+.skill-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer a {
+    color: black;
+    font-size: 2rem;
+}
+
+.col {
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 800px) {
+    #pic-intro {
+        flex-direction: column;
+    }
+
+    #pic {
+        width: 50%;
+        margin-bottom: 10%;
+    }
+
+    #intro {
+        width: 80%;
+    }
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
+}
+
+.scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+}
+
+.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+
+.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
